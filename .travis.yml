@@ -29,8 +29,9 @@ jobs:
     cache:
       directories:
       - client/node_modules
-    script:
-    - cd frontend
+    before_install:
+    - cd backend
+    install:
     - yarn
     deploy:
       provider: heroku
