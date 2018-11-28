@@ -9,7 +9,7 @@ jobs:
     addons:
       postgresql: '9.6'
     before_install:
-    - cd frontend
+    - cd backend
     install:
     - pip install -r requirements.txt
     before_script:
