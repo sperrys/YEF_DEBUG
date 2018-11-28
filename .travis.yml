@@ -8,9 +8,12 @@ jobs:
     - postgresql
     addons:
       postgresql: '9.6'
+    before_install:
+    - cd frontend
+    install:
+    - pip install -r requirements.txt
     before_script:
     - psql -c 'create database travis_ci_test;' -U postgres
-    - cd backend
     deploy:
       provider: heroku
       app: yefdebug
