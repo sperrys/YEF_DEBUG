@@ -30,7 +30,7 @@ jobs:
       directories:
       - client/node_modules
     before_install:
-    - cd backend
+    - cd frontend
     install:
     - yarn
     script: echo foo
