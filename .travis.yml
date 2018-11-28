@@ -4,6 +4,8 @@ jobs:
   include:
   - stage: deploy backend to production
     language: python
+    python:
+       - "3.6"
     services:
     - postgresql
     addons:
@@ -19,7 +21,7 @@ jobs:
       app: yefdebug
       api_key:
         secure: ej3Egu8KqyHrWKIOVqSooioEhdKP3aAgbeUnk7gMbaQP7uZrwHPsiqFAe3pVRD3srqvLqUv3rLnUaMN7C6kAkQwD333xs6nzuhF1Ur8QXy8KwAI5Fu1Nj8x7cxjZdint9GMUT70j737JP2U86AhR9Bz67g0N9PC4/zHh2Td4vyBRCHZGYarfg6TIRaIZEuGOxw07SMzaDBEp8UZR6xdD4usutZgQgUzEbFku2ygoomxce0DhHrvcyEyovvhgPszYEFtPV6Puk95uNdwoudNi8lBqup0Vwq1bdwMe5cOf2Zk45RPsXq9mWo2DQUoHkd2JsER6OPhdU5HLoLqO0LUi/vHkPwr9nOMZWyWKTI7HJJ9y4vTBajkN0LPwIsIVmFzyVRb7gFPXkgs4hZ5/ERyiVEl3aKnKYDGL9oqhV31giEBLW2jYsQHxOSKOCQtmZT59ScjtUGiJdJxLumFRrIQ6wVxmsI3Wx+ieXqGhJZocJHMZGGhrJWw+h+FrbzAEEfB2sW/jFzIMVCgJJaoey6TUGQe3VBaI8TSgakg40i9nLhI/3wkbg0dLvPd+01pI8zNAaY4LbgxhuyNAsYbrh+WM0oIlZmIbMG0hHMVXQKd+l6lm/6U63dIwHENEK1iZdU4xrzruGCshGivqHo+AR8zZjrc7d3aBS2ixDrv3yLMUgqg=
-      run: 
+      run:
   - stage: deploy frontend to production
     language: node_js
     node_js:
