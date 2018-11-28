@@ -33,7 +33,7 @@ jobs:
     - cd backend
     install:
     - yarn
-    script: node
+    script: echo foo
     deploy:
       provider: heroku
       app: yefdebugfrontend
