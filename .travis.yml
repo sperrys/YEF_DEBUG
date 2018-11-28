@@ -5,7 +5,7 @@ jobs:
   - stage: deploy backend to production
     language: python
     python:
-       - "3.6"
+    - '3.6'
     services:
     - postgresql
     addons:
@@ -21,8 +21,7 @@ jobs:
       provider: heroku
       app: yefdebug
       api_key:
-        secure: c8QnQxTURPFWzXqNdzsrrVH7ebDy8tPEEztES4Cpc19Ol4KpKTVIc4JTO0v+RzFGVmHRE83N0E8gVtmLVKxQvPo6cXZqPGUM+zl7j7FHSSwUqIghTIWilHTakUb9LkP3kA6eMCSOQDx9N0MYlCnSumGpambb/lMY63M/iOHNiHaXcgkF3BHs2HSAbZSxNrRL00V9ZJKfThGfeZsDZeePAPeiADqzrNsMnQ9buMTgbNKemYy95eircop6CvIJF5ANFCQeth2YxM47Lq5i6MoGy1KVxDb0KMiB72gzXK+bnsNOv/h3oXY9sLcOmOUPiQ6xv6gip1ijSmXLV4lFIRhvUu2dwXRxxVYczFbRz4MNjmKiC9xt0rEOt6wZu1D2nm6S8h8YbhrZZf8pBpAi3hNIiHhauYXwvZZ70UtzIUinjook6BSz+thbS3BG+KaaLMjC51oagfP57oN4x+n9UvlWmNszY+hXg4GIliPdlHwddBWdKnoK9xBIj0JARQ46rEOBYHGsTHHJB/SESmqqwyBLx5J0Vwt2Lu8zZECgDId1ZWAEL7a5INszdyBkhlQdKt/uJr/e94Ld4oXdBXY8svL7FE/5FqsClDGJ1tjZ0uaLnnP1E94PuxfNZ0Ye6wrfv+mcj2FJ8Cby5vfr8g5zBMSls4/OfJIS2NtzDEZLlyRZPgE=
-
+        secure: dDr0ViFeOTue2JqZ/M5cGDzLxK4KplnOGDodmsX8x03jDIpHqnL47+dZRNuLkelYnHI5nOiRYvNq3p57bu2CsJcxi2sR7u7w5+ZNbyQTg/gusitPL/FlGRpixboayeRJF21qoxn6JR8UPHI44jEhC3HmJKayQHwI4l8d1jSQRkQrZaquvHS2v4FxxvDdGN0/63I/xNx9iF3h7gBg7GkBwn3/sy2lfWXJj3Gu7Jy5y2x47Iqsz1dUtfeB1Yt8ndHfNcmpC025Cbu9yH+wNx0xSyLQw7Cnt9Runo9lSkrooMozcU+/UPOrHt05/tQ0trWBN3OKm448aSlSv1YGzP58eIekURRfccLMsIvcqK4hLrYLn/SOS5tFZuKdUZMZID8b7ZtI0lECW6XlnzM0yjJUw5sDAZdXebopw5Mulc22ODUuCnhIyhh12s1pq6mMT5t8FtX4h2qx8WxKQfkELGa6tWYPyUholUZ0bEkJlhs++11sd3lOYqd2mhtDN5buLVQnrCJcWZ52FFRlsDlU+PRwBROqjThowB1CLDPRvm+K9UeS1F4PkWL1UDCEuFcXbDpOztxHE9kaUbQQtJWvWL2W10SBwuI4t1YFK3i/cg8y4Sa7KCbQ2ueioLg7CxkNKzAoAz6wTbHXYFfrrpoWWnmr/tb5Sh7TcjWTe8jHARfoF4I=
   - stage: deploy frontend to production
     language: node_js
     node_js:
@@ -35,5 +34,5 @@ jobs:
     deploy:
       provider: heroku
       app: yefdebugfrontend
-      api_key:
-        secure: c8QnQxTURPFWzXqNdzsrrVH7ebDy8tPEEztES4Cpc19Ol4KpKTVIc4JTO0v+RzFGVmHRE83N0E8gVtmLVKxQvPo6cXZqPGUM+zl7j7FHSSwUqIghTIWilHTakUb9LkP3kA6eMCSOQDx9N0MYlCnSumGpambb/lMY63M/iOHNiHaXcgkF3BHs2HSAbZSxNrRL00V9ZJKfThGfeZsDZeePAPeiADqzrNsMnQ9buMTgbNKemYy95eircop6CvIJF5ANFCQeth2YxM47Lq5i6MoGy1KVxDb0KMiB72gzXK+bnsNOv/h3oXY9sLcOmOUPiQ6xv6gip1ijSmXLV4lFIRhvUu2dwXRxxVYczFbRz4MNjmKiC9xt0rEOt6wZu1D2nm6S8h8YbhrZZf8pBpAi3hNIiHhauYXwvZZ70UtzIUinjook6BSz+thbS3BG+KaaLMjC51oagfP57oN4x+n9UvlWmNszY+hXg4GIliPdlHwddBWdKnoK9xBIj0JARQ46rEOBYHGsTHHJB/SESmqqwyBLx5J0Vwt2Lu8zZECgDId1ZWAEL7a5INszdyBkhlQdKt/uJr/e94Ld4oXdBXY8svL7FE/5FqsClDGJ1tjZ0uaLnnP1E94PuxfNZ0Ye6wrfv+mcj2FJ8Cby5vfr8g5zBMSls4/OfJIS2NtzDEZLlyRZPgE=
+    api_key:
+        secure: dDr0ViFeOTue2JqZ/M5cGDzLxK4KplnOGDodmsX8x03jDIpHqnL47+dZRNuLkelYnHI5nOiRYvNq3p57bu2CsJcxi2sR7u7w5+ZNbyQTg/gusitPL/FlGRpixboayeRJF21qoxn6JR8UPHI44jEhC3HmJKayQHwI4l8d1jSQRkQrZaquvHS2v4FxxvDdGN0/63I/xNx9iF3h7gBg7GkBwn3/sy2lfWXJj3Gu7Jy5y2x47Iqsz1dUtfeB1Yt8ndHfNcmpC025Cbu9yH+wNx0xSyLQw7Cnt9Runo9lSkrooMozcU+/UPOrHt05/tQ0trWBN3OKm448aSlSv1YGzP58eIekURRfccLMsIvcqK4hLrYLn/SOS5tFZuKdUZMZID8b7ZtI0lECW6XlnzM0yjJUw5sDAZdXebopw5Mulc22ODUuCnhIyhh12s1pq6mMT5t8FtX4h2qx8WxKQfkELGa6tWYPyUholUZ0bEkJlhs++11sd3lOYqd2mhtDN5buLVQnrCJcWZ52FFRlsDlU+PRwBROqjThowB1CLDPRvm+K9UeS1F4PkWL1UDCEuFcXbDpOztxHE9kaUbQQtJWvWL2W10SBwuI4t1YFK3i/cg8y4Sa7KCbQ2ueioLg7CxkNKzAoAz6wTbHXYFfrrpoWWnmr/tb5Sh7TcjWTe8jHARfoF4I=
